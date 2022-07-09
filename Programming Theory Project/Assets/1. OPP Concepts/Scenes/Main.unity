@@ -396,7 +396,7 @@ GameObject:
   - component: {fileID: 433194355}
   - component: {fileID: 433194359}
   m_Layer: 0
-  m_Name: hi sphere
+  m_Name: sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -507,7 +507,7 @@ GameObject:
   - component: {fileID: 695576158}
   - component: {fileID: 695576162}
   m_Layer: 0
-  m_Name: hi capsule
+  m_Name: capsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -837,7 +837,7 @@ GameObject:
   - component: {fileID: 1692917641}
   - component: {fileID: 1692917645}
   m_Layer: 0
-  m_Name: hi cube
+  m_Name: cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

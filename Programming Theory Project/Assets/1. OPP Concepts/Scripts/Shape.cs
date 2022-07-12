@@ -3,16 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class Shape : MonoBehaviour
+// ABSTRACTION
+public abstract class Shape : MonoBehaviour
 {
-    [SerializeField] string _name;  // ABSTRACTION
-    [SerializeField] string _color; // ABSTRACTION
-    [SerializeField] TextMeshProUGUI _displayArea;  // ABSTRACTION
+    [SerializeField] string _name;
+    [SerializeField] string _color;
+    [SerializeField] TextMeshProUGUI _displayArea;
 
-    private void Awake()
+    private void Awake()    // this method will invoke even if this script is not present in hierarchy
     {
-        _name = "ShapeName";
-        _color = "ShapeColor";
         DisplayArea = GameObject.Find("Display Text").GetComponent<TextMeshProUGUI>();
     }
 
@@ -36,11 +35,8 @@ public class Shape : MonoBehaviour
     public TextMeshProUGUI DisplayArea 
     { 
         get { return _displayArea; }
-        protected set { _displayArea = value; } 
+        set { _displayArea = value; } 
     }
 
-    public virtual void DisplayText()
-    {
-        _displayArea.text = "Name: " + Name + "\nColor: " + Color;
-    }
+    public abstract void DisplayText();
 }
